@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".Activities.VotersActivities.LoginVotersActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V O T E"
+        android:textSize="80dp"
+        android:textColor="@color/colorOrange"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginBottom="55dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/voterID"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        app:passwordToggleTint="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        android:backgroundTint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingStart="12dp"
+            android:hint="Voter ID" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/adminName"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:passwordToggleTint="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        android:backgroundTint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingStart="12dp"
+            android:hint="Admin Name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/voterElectionCode"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:passwordToggleTint="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        android:backgroundTint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Election Code" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnVoterSubmit"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/reg_btn_style"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Having trouble to login?"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="contact your admin."
+        android:fontFamily="@font/montserrat_light"
+        android:textAlignment="center"/>
+
+</LinearLayout>

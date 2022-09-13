@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/candidatesProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile_pic"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/candidatesIDOrLRN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/candidatesProfile"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Student ID/LRN:"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/candidatesName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/candidatesIDOrLRN"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/candidatesProfile"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Full Name:"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/candidatesPartyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/candidatesName"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/candidatesProfile"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Partylist:"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/candidatesYearLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/candidatesPartyList"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/candidatesProfile"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Grade/Year Level:"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/candidatesSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/candidatesYearLevel"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/candidatesProfile"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Section:"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/candidatesPositionRunningFor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/candidatesSection"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/candidatesProfile"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Position Running For:"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

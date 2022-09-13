@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_tallyBoard"
+            android:icon="@drawable/ic_tallyboard_black_24dp"
+            android:title="@string/menu_tally_board" />
+        <item
+            android:id="@+id/nav_voters"
+            android:icon="@drawable/ic_voters_black_24dp"
+            android:title="@string/menu_voters" />
+        <item
+            android:id="@+id/nav_candidates"
+            android:icon="@drawable/ic_candidates_black_24dp"
+            android:title="@string/menu_candidates" />
+        <item
+            android:id="@+id/nav_position"
+            android:icon="@drawable/ic_add_position_and_partylist_24dp"
+            android:title="@string/menu_position_and_party_list" />
+        <item
+            android:id="@+id/nav_electionSetting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/menu_election_settings" />
+        <item
+            android:id="@+id/nav_signOut"
+            android:icon="@drawable/ic_sign_out_black_24dp"
+            android:title="@string/menu_sign_out" />
+    </group>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About" />
+
+
+</menu>

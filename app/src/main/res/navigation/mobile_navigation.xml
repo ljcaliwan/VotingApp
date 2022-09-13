@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.project.votingapp.Activities.AdminFragments.Home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_tallyBoard"
+        android:name="com.project.votingapp.Activities.AdminFragments.TallyBoard.TallyBoardFragment"
+        android:label="Tally Board"
+        tools:layout="@layout/fragment_tally_board" />
+
+    <fragment
+        android:id="@+id/nav_voters"
+        android:name="com.project.votingapp.Activities.AdminFragments.Voters.VotersFragment"
+        android:label="Voters"
+        tools:layout="@layout/fragment_voters" />
+
+    <fragment
+        android:id="@+id/nav_candidates"
+        android:name="com.project.votingapp.Activities.AdminFragments.Candidates.CandidatesFragment"
+        android:label="Candidates"
+        tools:layout="@layout/fragment_candidates" />
+
+    <fragment
+        android:id="@+id/nav_position"
+        android:name="com.project.votingapp.Activities.AdminFragments.Position.PositionFragment"
+        android:label="Position and Partylist"
+        tools:layout="@layout/fragment_position" />
+
+    <fragment
+        android:id="@+id/nav_electionSetting"
+        android:name="com.project.votingapp.Activities.AdminFragments.ElectionSetting.ElectionSettingFragment"
+        android:label="Election Setting"
+        tools:layout="@layout/fragment_election_setting" />
+
+
+</navigation>

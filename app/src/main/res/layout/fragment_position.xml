@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Add Candidate Partylist"
+        android:textColor="@color/colorGrey"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+
+        android:id="@+id/h_txtAddPartylist"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="Candidate partylist"
+        android:paddingStart="15dp" />
+
+    <Button
+
+        android:id="@+id/h_btnAddPartylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/startelection_btn_style"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/c_txtAddPartylist"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="Candidate partylist"
+        android:paddingStart="15dp"
+        />
+
+    <Button
+        android:id="@+id/c_btnAddPartylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/startelection_btn_style"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Add Candidate Position"
+        android:textColor="@color/colorGrey"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+
+        android:id="@+id/h_txtAddPosition"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="Candidate position"
+        android:paddingStart="15dp" />
+
+    <Button
+
+        android:id="@+id/h_btnAddPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/startelection_btn_style"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/c_txtAddPosition"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="Candidate position"
+        android:paddingStart="15dp"
+       />
+
+    <Button
+        android:id="@+id/c_btnAddPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/startelection_btn_style"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

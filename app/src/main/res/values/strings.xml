@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Voting App</string>
+    <string name="title_activity_admin_home">AdminHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_tally_board">Tally Board</string>
+    <string name="menu_voters">Voters</string>
+    <string name="menu_candidates">Candidates</string>
+    <string name="menu_election_settings">Election Settings</string>
+    <string name="menu_position_and_party_list">Add Position and Partylist</string>
+    <string name="menu_sign_out">Sign out</string>
+
+    <string-array name="election_type">
+        <item>Select Election Type </item>
+        <item>Junior/Senior High Election (SSG ELECTION)</item>
+        <item>College Election (SSC ELECTION)</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".Activities.AdminActivities.AddCandidatesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/colorWhite"
+        android:id="@+id/toolbar_Candidates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nominate candidate"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_regular" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/addImgCandidate"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="65dp"
+        android:visibility="visible"
+        android:src="@drawable/candidates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorWhite"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/h_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/h_LRN"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="175dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Learner Reference Number (LRN)"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/h_fullName"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Full Name"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/h_LRN" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/h_partyList"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/spinner_style"
+            android:paddingTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/h_fullName">
+
+            <Spinner
+                android:id="@+id/h_partyListSpinner"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/h_gradeLevel"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Grade Level"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/h_partyList" />
+
+        <EditText
+            android:id="@+id/h_section"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Section"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/h_gradeLevel" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/h_positionLayout"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/spinner_style"
+            android:paddingTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/h_section">
+
+            <Spinner
+                android:id="@+id/h_positionRunningForSpinner"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/h_addCandidates"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/startelection_btn_style"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/h_positionLayout"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/c_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_Candidates">
+
+        <EditText
+            android:id="@+id/c_LRN"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="175dp"
+            android:background="@drawable/custom_input"
+            android:hint="Student ID"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/c_fullName"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/custom_input"
+            android:hint="Full Name"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c_LRN" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/spinner_style"
+            android:id="@+id/c_partyList"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c_fullName">
+
+            <Spinner
+                android:id="@+id/c_partyListSpinner"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:paddingStart="5dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <EditText
+            android:id="@+id/c_yearLevel"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/custom_input"
+            android:hint="Year Level"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c_partyList" />
+
+        <EditText
+            android:id="@+id/c_section"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/custom_input"
+            android:hint="Section"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c_yearLevel" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/spinner_style"
+            android:id="@+id/c_positionLayout"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c_section">
+
+            <Spinner
+                android:id="@+id/c_positionRunningForSpinner"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:paddingStart="5dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/c_addCandidates"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/startelection_btn_style"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c_positionLayout"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

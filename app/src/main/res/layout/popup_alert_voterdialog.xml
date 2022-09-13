@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="260dp"
+    android:layout_height="340dp"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/notify"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:text="NOTE"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/colorBlack"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:text="Please add all the voters before closing the application to avoid system erros."
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/colorGrey"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textStyle="bold"
+        android:text="OK"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/bg_round2"/>
+
+</LinearLayout>

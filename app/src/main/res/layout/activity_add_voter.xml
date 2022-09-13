@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".Activities.AdminActivities.AddVoterActivity"
+    android:id="@+id/highSchool_layout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/colorWhite"
+        android:id="@+id/toolbar_Voter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add voter"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_regular" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textview_style"
+        android:backgroundTint="@color/colorOrange"
+        android:fontFamily="@font/montserrat_regular"
+        android:paddingTop="7dp"
+        android:text="Voter Information"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_Voter" />
+
+    <EditText
+        android:id="@+id/highSchoolVoterName"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/montserrat_regular"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/highSchoolVoterLRN"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="LRN"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highSchoolVoterName" />
+
+    <EditText
+        android:id="@+id/highSchoolVoterGradeLvl"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="Grade Level"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highSchoolVoterLRN" />
+
+    <EditText
+        android:id="@+id/highSchoolVoterSection"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/custom_input"
+        android:hint="Section"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highSchoolVoterGradeLvl" />
+
+    <Button
+        android:id="@+id/btn_addVoterHighSchool"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/startelection_btn_style"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highSchoolVoterSection" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:id="@+id/college_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/voterFullName"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="136dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/voterStudentID"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Student ID"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/voterFullName" />
+
+        <EditText
+            android:id="@+id/voterYearLvl"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Year Level"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/voterStudentID" />
+
+        <EditText
+            android:id="@+id/voterSection2"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/custom_input"
+            android:hint="Section"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/voterYearLvl" />
+
+        <Button
+            android:id="@+id/btn_addVoterCollege"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/startelection_btn_style"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/voterSection2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

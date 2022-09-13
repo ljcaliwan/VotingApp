@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/voterProfile"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/profile_pic"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/voterFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:fontFamily="@font/montserrat_light"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_toRightOf="@id/voterProfile"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/studIDOrLRN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student ID or LRN"
+            android:fontFamily="@font/montserrat_light"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_toRightOf="@id/voterProfile"
+            android:layout_below="@id/voterFullName"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/gradeLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grade/Year Level"
+            android:textSize="12dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/voterProfile"
+            android:layout_below="@id/studIDOrLRN"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/voterSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Section"
+            android:fontFamily="@font/montserrat_light"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_toRightOf="@id/voterProfile"
+            android:layout_below="@id/gradeLevel"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
